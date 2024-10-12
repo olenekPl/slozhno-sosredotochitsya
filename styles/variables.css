@@ -1,0 +1,29 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+:root {
+  --main-font: 'IBM Plex mono';
+  --bg-color: #000028;
+  --bg-image: url("../images/cover-image-dark.png");
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --button-active-border-color: #FF0070;
+  --button-hover-border-color: rgba(255, 0, 112, 0.4);
+  --button-focuse-border-color: #FF0070;
+  --header-title-color:  #DB00FF;
+  --shadow: #FF0070;
+  --header-decor-text-color: #FF0070;
+  --header-decor-bg-color: #FF0070;
+  --header-theme-menu-text-color: #FF0070;
+  --decorated-zone: #FF0070;
+  --title-decor-bg-color:  #FF0070;
+  --title-decor-text-color:   #000028;
+  --main-title-text-color: #FF0070;
+  --main-mintitle-text-color: #000028;
+  --link-color: #F1B2CE;
+  --link-shadow: #ff0070;
+  --link-focus-border-color: #F1B2CE;
+  --footer-title-text-color: #DB00FF;
+}
+

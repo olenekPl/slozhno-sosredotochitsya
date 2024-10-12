@@ -1,0 +1,59 @@
+@media (prefers-color-scheme: light) {
+  :root {
+  --main-font: 'IBM Plex mono';
+  --bg-color: #fff1f7;
+  --bg-image: url("../images/cover-image-light.png");
+  --text-color: #353430;
+  --accent-color: #353430;
+  --button-active-border-color: rgba(53, 52, 48, 1);
+  --button-hover-border-color: rgba(50, 49, 45, 0.4);
+  --button-focuse-border-color: rgba(53, 52, 48, 1);
+  --header-title-color: #FFC2E6;
+  --shadow: #FF0070;
+  --header-theme-menu-text-color: rgba(53, 52, 48, 1);
+  --decorated-zone: rgba(53, 52, 48, 1);
+  --title-decor-bg-color: rgba(255, 141, 203, 1);
+  --title-decor-text-color: rgba(53, 52, 48, 1);
+  --main-title-text-color: rgba(53, 52, 48, 1);
+  --main-mintitle-text-color: rgba(53, 52, 48, 1);
+  --link-color: rgba(53, 52, 48, 1);
+  --link-shadow: #ff8dcb;
+  --link-focus-border-color: #353430;
+  --footer-title-text-color: #FFC2E6;
+  }
+  
+  .header__decor {
+    visibility: hidden;
+  }
+}
+
+.page.theme_light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --main-font: 'IBM Plex mono';
+  --bg-color: #fff1f7;
+  --bg-image: url("../images/cover-image-light.png");
+  --text-color: #353430;
+  --accent-color: #353430;
+  --button-active-border-color: rgba(53, 52, 48, 1);
+  --button-hover-border-color: rgba(50, 49, 45, 0.4);
+  --button-focuse-border-color: rgba(53, 52, 48, 1);
+  --header-title-color: #FFC2E6;
+  --shadow: #FF0070;
+  --header-theme-menu-text-color: rgba(53, 52, 48, 1);
+  --decorated-zone: rgba(53, 52, 48, 1);
+  --title-decor-bg-color: rgba(255, 141, 203, 1);
+  --title-decor-text-color: rgba(53, 52, 48, 1);
+  --main-title-text-color: rgba(53, 52, 48, 1);
+  --main-mintitle-text-color: rgba(53, 52, 48, 1);
+  --link-color: rgba(53, 52, 48, 1);
+  --link-shadow: #ff8dcb;
+  --link-focus-border-color: #353430;
+  --footer-title-text-color: #FFC2E6;
+}
+
+.page.theme_light .header__decor {
+  visibility: hidden;
+}

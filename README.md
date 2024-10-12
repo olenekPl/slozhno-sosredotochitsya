@@ -1,1 +1,1 @@
-# slozhno-sosredotochitsya
+https://github.com/olenekPl/slozhno-sosredotochitsya
