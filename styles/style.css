@@ -215,7 +215,7 @@
 
 /* ОСНОВНОЙ КОНТЕНТ */
 .group {
-  padding: 0 10px 30px 10px;
+  padding: 0 10px 50px 10px;
 }
 
 .main__title {
@@ -235,12 +235,12 @@
   font-size: 18px;
   line-height: 130%;
   color: var(--text-color, #F1B2CE);
-  margin-block-start: 10px;
-  margin-block-end: 20px;
+  margin-block-start: 3%;
 }
 
-.main__paragraph:not(:last-child) {
-  margin-block-end: 20px;
+.block {
+  display: grid;
+  gap: 20px;
 }
 
 /* ссылка */
@@ -289,9 +289,17 @@
 @media (min-width: 768px) {
   .main {
     display: grid;
-    gap: 60px;
+    gap: 80px;
   }
 
+  .main__paragraph {
+    margin-block-start: 2%;
+  }
+
+  .article__list.block {
+    gap: 15px;
+  }
+  
   .group {
     padding: 0 20px;
   }
@@ -305,6 +313,7 @@
   .section-what .main__title {
     display: grid;
     inline-size: min(236px, 100%);
+    margin-block-end: 23px;
   }
 
   .section-image {
@@ -354,12 +363,21 @@
 }
 
 @media (min-width: 1024px) {
+  .main {
+    gap: 84px;
+  }
+
   .section-why, .section-how {
     grid-template-columns: min(315px, 100%) 1fr;
   }
 
+  .main__paragraph {
+    margin-block-start: 1.5%;
+  }
+
   .section-what .main__title {
     inline-size: min(315px, 100%);
+    margin-block-end: 20px;
   }
   
   .article__list {
@@ -376,7 +394,7 @@
 
 /* ПОДВАЛ */
 .footer {
-  margin-block-start: 20px;
+  margin-block-start: -10px;
   position: relative;
   display: grid;
   min-block-size: max(668px, 100vb);
@@ -390,7 +408,7 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  margin-block-start: 5%;
+  margin-block-start: 15%;
   color: var(--footer-title-text-color, #DB00FF);
   text-shadow: 2px 2px 0px var(--shadow, #FF0070);
 }
@@ -403,6 +421,7 @@
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-block-start: 1%;
   }
 }
 
