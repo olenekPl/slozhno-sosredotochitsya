@@ -18,7 +18,6 @@
   block-size: 100vh;
   min-height: 668px;
   padding: 10px;
-  margin-block-end: 40px;
 }
 
 .header__theme-menu-button_active {
@@ -146,7 +145,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   color: var(--title-decor-text-color, #000028);
   white-space: pre-line;
 }
@@ -155,7 +154,6 @@
   .header {
     min-height: 1024px;
     padding: 20px 20px 20px 0;
-    margin-block-end: 60px;
   }
 
   .header__title {
@@ -218,14 +216,17 @@
   padding: 0 10px 50px 10px;
 }
 
+.main {
+  margin-block-start: 40px;
+}
+
 .main__title {
   font-family: var(--main-font, 'IBM Plex mono', monospace, sans-serif);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   color: var(--main-title-text-color, #FF0070);
-  margin-block-end: 20px;
 }
 
 .main__paragraph {
@@ -233,14 +234,42 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 130%;
+  line-height: 23.4px;
   color: var(--text-color, #F1B2CE);
-  margin-block-start: 3%;
 }
 
 .block {
   display: grid;
   gap: 20px;
+}
+
+.minblock {
+  display: grid;
+  gap: 10px;
+}
+
+.section-why {
+  display: grid;
+  gap: 20px;
+}
+
+.section-what {
+  display: grid;
+  gap: 20px;
+}
+
+.section-how {
+  display: grid;
+  gap: 20px;
+}
+
+.section-image {
+  padding: 0 10px 40px 10px;
+}
+
+.wrap {
+  display: grid;
+  gap: 20px; 
 }
 
 /* ссылка */
@@ -273,7 +302,6 @@
   line-height: 23px;
   color: var(--main-mintitle-text-color, #000028);
   white-space: pre-line;
-  margin-block-start: 20px;
 }
 
 .image-list {
@@ -290,14 +318,7 @@
   .main {
     display: grid;
     gap: 80px;
-  }
-
-  .main__paragraph {
-    margin-block-start: 2%;
-  }
-
-  .article__list.block {
-    gap: 15px;
+    margin-block-start: 60px;
   }
   
   .group {
@@ -313,7 +334,6 @@
   .section-what .main__title {
     display: grid;
     inline-size: min(236px, 100%);
-    margin-block-end: 23px;
   }
 
   .section-image {
@@ -363,27 +383,19 @@
 }
 
 @media (min-width: 1024px) {
-  .main {
-    gap: 84px;
-  }
-
   .section-why, .section-how {
     grid-template-columns: min(315px, 100%) 1fr;
   }
 
-  .main__paragraph {
-    margin-block-start: 1.5%;
-  }
-
   .section-what .main__title {
     inline-size: min(315px, 100%);
-    margin-block-end: 20px;
   }
   
   .article__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: start;
   }
 
   .image-list {
@@ -394,7 +406,6 @@
 
 /* ПОДВАЛ */
 .footer {
-  margin-block-start: -10px;
   position: relative;
   display: grid;
   min-block-size: max(668px, 100vb);
@@ -408,7 +419,7 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  margin-block-start: 15%;
+  margin-block-start: 16%;
   color: var(--footer-title-text-color, #DB00FF);
   text-shadow: 2px 2px 0px var(--shadow, #FF0070);
 }
@@ -421,12 +432,16 @@
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-start: 1%;
+    margin-block-start: 0.5%;
   }
 }
 
 @media (min-width: 1024px) {
   .footer {
     min-block-size: max(768px, 100vb);
+  }
+
+  .footer__title {
+    margin-block-start: 3%;
   }
 }
